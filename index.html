@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script src="./jquery-3.3.1.min.js"></script>
+	<script src="./script.js"></script>
+	<style>
+		#print-content {
+			visibility: hidden;
+			width: 793.70px;
+			position: absolute;
+			top: 0;
+			left: -50000px;
+		}
+		@page {
+			margin: 0;
+		}
+		table {
+	    border-collapse: collapse;
+		}
+		td, th {
+	    border: 1px solid #dddddd;
+	    text-align: left;
+	    padding: 8px;
+		}
+		tr:nth-child(even) {
+	    background-color: #dddddd;
+		}
+		* {
+	    font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.page-print {
+			padding: 50px 0;
+			text-align: center;
+		}
+		.page-print table {
+			margin: 0 auto;
+		}
+		#print-content .print {
+			margin: 30px 56px;
+		}
+		@media print {
+			body {
+				visibility: hidden;
+			}
+			#print-content {
+				visibility: visible;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<button id="gerar">Gerar</button>
+	<button id="reset">reset</button>
+	
+	<div id="print-content"></div>
+	
+	<div id="content">
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+		<table>
+		  <tr class="print-tr first-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <th>Company</th>
+		    <th>Contact</th>
+		    <th>Country</th>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Maria Anders</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>Francisco Chang</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="print-tr">
+		    <td>Ernst Handel</td>
+		    <td>Roland Mendel</td>
+		    <td>Austria</td>
+		  </tr>
+		</table>
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+		<img src="./image2.jpg" class="print">
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS.</p>
+			<img src="./image2.jpg">
+		</div>
+		<div>
+			<p class="print">Element, or another jQuery object. In this case, we'll just check it against a string selector</p>
+			<table>
+			  <tr class="print-tr first-tr">
+			    <th>Company</th>
+			    <th>Contact</th>
+			    <th>Country</th>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Alfreds Futterkiste</td>
+			    <td>Maria Anders</td>
+			    <td>Germany</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Centro comercial Moctezuma</td>
+			    <td>Francisco Chang</td>
+			    <td>Mexico</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Island Trading</td>
+			    <td>Helen Bennett</td>
+			    <td>UK</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Laughing Bacchus Winecellars</td>
+			    <td>Yoshi Tannamuri</td>
+			    <td>Canada</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Magazzini Alimentari Riuniti</td>
+			    <td>Giovanni Rovelli</td>
+			    <td>Italy</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Island Trading</td>
+			    <td>Helen Bennett</td>
+			    <td>UK</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Laughing Bacchus Winecellars</td>
+			    <td>Yoshi Tannamuri</td>
+			    <td>Canada</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Magazzini Alimentari Riuniti</td>
+			    <td>Giovanni Rovelli</td>
+			    <td>Italy</td>
+			  </tr>
+			</table>
+		</div>
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+		<div>
+			<p class="print">Ajsjsjskssjkssjhkjkk j kiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+			<table>
+			  <tr class="print-tr first-tr">
+			    <th>tabel</th>
+			    <th>test</th>
+			    <th>mann</th>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Alfreds Futterkiste</td>
+			    <td>Maria Anders</td>
+			    <td>Germany</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Centro comercial Moctezuma</td>
+			    <td>Francisco Chang</td>
+			    <td>Mexico</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Centro comercial Moctezuma</td>
+			    <td>Francisco Chang</td>
+			    <td>Mexico</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Centro comercial Moctezuma</td>
+			    <td>Francisco Chang</td>
+			    <td>Mexico</td>
+			  </tr>
+			  <tr class="print-tr">
+			    <td>Ernst Handel</td>
+			    <td>Roland Mendel</td>
+			    <td>Austria</td>
+			  </tr>
+			</table>
+		</div>
+		<img src="./image.jpg" class="print">
+		<div class="print">
+			<p>This should look similar to something you'd write in CSS. Note that it won't apply to all <code>#foo</code> elements (though there should only be one), and it won't apply to all <code>.bar</code> elements (though there may be many). It will only reference elements that qualify on both attributes.</p>
+			<p>jQuery also has a great <a href="http://api.jquery.com/is/" rel="noreferrer"><code>.is</code> method</a> that lets your determine whether an element has certain qualities. You can test a jQuery collection against a string selector, an HTML Element, or another jQuery object. In this case, we'll just check it against a string selector:</p>
+		</div>
+	</div>	
+</body>
+</html>
